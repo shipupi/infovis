@@ -1,6 +1,6 @@
 
 
-const url_prefix = "infovis/makeover/"
+const url_prefix = "makeover/"
 let makeovers = [
     {'title': "Week 9 - Seats Held by Women in National Parliaments and Governments", "url": "makeover_week9.html"},
     {'title': "Todo", "url": "todo.html"}
