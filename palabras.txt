@@ -1,0 +1,17 @@
+Choropleth Map
+Stacked Graph
+Horizon Graphs
+Parallel Coordinates
+Statical Distributions
+Dorling Cartogram
+Brushing-And-Linking
+Graduate Symbol Map
+Jigsaw Treemap
+Matrix View
+Adjacency Diagrams
+Force-Directed Layout
+Q-Q Plot
+Choropleth Maps
+Circle Packing
+Flow Maps
+Dorling
