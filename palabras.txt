@@ -1,0 +1,36 @@
+Choropleth Map
+Stacked Graph
+Horizon Graphs
+Parallel Coordinates
+Statical Distributions
+Dorling Cartogram
+Brushing-And-Linking
+Graduated Symbol Map
+Jigsaw Treemap
+Matrix View
+Adjacency Diagrams
+Force-Directed Layout
+Q-Q Plot
+Choropleth Maps
+Circle Packing
+flow map
+Dorling
+interaction techniques
+cartographic projection
+distortion
+shaded value
+confounding
+k-means clustering
+phylogenetic trees
+dendrogram 
+orange leaf nodes
+sunburst layout
+icicle layout
+space-filling adjacency
+Enclosure Diagrams
+Squarified 
+Voronoi 
+jigsaw treemaps
+Arc Diagrams
+
+node-link diagram
