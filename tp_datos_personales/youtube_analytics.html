@@ -10,5 +10,20 @@
         <div>
             <div class='tableauPlaceholder' id='viz1619393491217' style='position: relative'><noscript><a href='#'><img alt='Youtube Analytics ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Yo&#47;YoutubeAnalytics_16193922936420&#47;YoutubeAnalytics&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='YoutubeAnalytics_16193922936420&#47;YoutubeAnalytics' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Yo&#47;YoutubeAnalytics_16193922936420&#47;YoutubeAnalytics&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1619393491217');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1024px';vizElement.style.height='2327px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1024px';vizElement.style.height='2327px';} else { vizElement.style.width='100%';vizElement.style.height='1977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
         </div>
+        
+        <a href="watch-history_itba.html">Dataset Original</a>
+        <a href="merged_data_with_category.json"> Dataset Procesado</a>
+        <div>
+            <span> Procesamiento de datos:</span>
+            <ul>
+                <li>Takeout de youtube de 3 cuentas distintas, ver <a href="watch-history_itba.html">Dataset Original</a></li>
+                <li>Parsing del html original, agarrando de cada video el nombre, el uploader, y la fecha</li>
+                <li>Por cada video, se le pega a la API de youtube: https://www.googleapis.com/youtube/v3/videos?part=snippet&id=muewMnk8o5U&key=APIKEY, con cada request a la API, se consiga informacion extra del video: la category id, la lista de tags</li>
+                <li>Dado que la API de youtube es gratis, pero tiene una quota diaria, tuve que crear 4 cuentas de youtube, y crear una api key con cada una, tuve que hacer un proceso de mergeo de datos tambien</li>
+                <li>Usando los tags, se creo el wordcloud desde python</li>
+                <li>Para importar a tableau, tuve que sacar los tags del dataset, ya que al ser una lista, le traia problemas al import de tableau</li>
+                <li><a href="https://github.com/shipupi/infovis/tree/gh-pages/tp_datos_personales/scrapping">Aca</a> se puede ver todo el codigo que implica el proceso de scrapping y procesamiento de datos</li>
+            </ul>
+        </div>
     </body>
 </html>
